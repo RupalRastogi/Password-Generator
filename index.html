@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatiner">
+        <h1>Password Generator</h1>
+
+         <!-- where generated password shows, it is read only -->
+        <div class="display-container">
+            <!-- readonly mode -->
+            <!-- data-passwordDisplay -- custon attribute -->
+            <input readonly placeholder="password" class="display`" data-passwordDisplay>
+
+            <!-- copy button -->
+
+            <button data-copy>
+                <!-- ismai text show hoga -->
+                <span data-copyMSG></span> 
+                <!-- image -->
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+          
+        <div class="input-container">
+         
+            <!-- password length -->
+        <div class="length-container">
+            <p>Password Length</p>
+            <p data-lengthNumber>0</p>
+        </div>
+
+        <!-- slider -->
+         <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+         
+         <!-- checkbox and label -->
+         <div>
+            <!-- 1 -->
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase Letters</label>
+            </div>
+
+            <div>
+            <!-- 2 -->
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes Lowercase Letters</label>
+            </div>
+
+            <div>
+            <!-- 3 -->
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Includes Numbers </label>
+            </div>
+
+            <div>
+            <!-- 4 -->
+            <input type="checkbox" id="symbol">
+            <label for="symbol">Includes Symbol </label>
+            </div>
+
+
+            <!-- strength -->
+           <div class="strength-container">
+            <p>Strength</p>
+            <!-- circle -->
+            <div data-indicator></div>
+           </div>
+            
+           <!-- generate password button -->
+           <button class="generateButton">Generate Password</button>
+
+         </div>
+
+        </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
