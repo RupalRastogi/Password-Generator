@@ -17,7 +17,7 @@ const numbersCheck = document.querySelector("#numbers");
 
 const symbolCheck = document.querySelector("#symbol"); 
 
-const indicator = document.querySelector("data-indicator");
+const indicator = document.querySelector(".indicator");
 
 const generateBtn = document.querySelector(".generateButton");
 
@@ -36,22 +36,24 @@ let checkCount = 0;
 handleSlider();
 
 // by defualt strength circle color is set to greyish
-
-
+setIndicator("#ccc");
 
 
 // set passwordLength --> reflect it on UI
 function handleSlider(){
    inputSlider.value = passwordLength;
    lengthDisplay.innerText = passwordLength;
-
+   const min = inputSlider.min;
+   const max = inputSlider.max;
+   inputSlider.style.backgroundSize = ((passwordLength-min)*100/(max-min))+"% 100%";
 }
 
 // set color of indicator
 function setIndicator(color){
     indicator.style.backgroundColor = color;
     //shadow 
-    // indicator.style.boxShadow = '0px 2px 4px rgba(0, 0, 0, 0.2)';
+    indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
+    
 }
 
 // generate random integer

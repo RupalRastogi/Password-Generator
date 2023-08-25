@@ -21,13 +21,13 @@
         <div class="display-container">
             <!-- readonly mode -->
             <!-- data-passwordDisplay -- custon attribute -->
-            <input readonly placeholder="password" class="display`" data-passwordDisplay>
+            <input readonly placeholder="password" class="display" data-passwordDisplay>
 
             <!-- copy button -->
 
-            <button data-copy>
+            <button class="copybtn" data-copy>
                 <!-- ismai text show hoga -->
-                <span data-copyMSG></span> 
+                <span class="tooltip" data-copyMSG></span> 
                 <!-- image -->
                 <i class="fa-regular fa-copy"></i>
             </button>
@@ -45,25 +45,25 @@
          <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
          
          <!-- checkbox and label -->
-         <div>
+         <div class="check">
             <!-- 1 -->
             <input type="checkbox" id="uppercase">
             <label for="uppercase">Includes Uppercase Letters</label>
             </div>
 
-            <div>
+            <div class="check">
             <!-- 2 -->
             <input type="checkbox" id="lowercase">
             <label for="lowercase">Includes Lowercase Letters</label>
             </div>
 
-            <div>
+            <div class="check">
             <!-- 3 -->
             <input type="checkbox" id="numbers">
             <label for="numbers">Includes Numbers </label>
             </div>
 
-            <div>
+            <div class="check">
             <!-- 4 -->
             <input type="checkbox" id="symbol">
             <label for="symbol">Includes Symbol </label>
@@ -74,7 +74,7 @@
            <div class="strength-container">
             <p>Strength</p>
             <!-- circle -->
-            <div data-indicator></div>
+            <div class="indicator" data-indicator></div>
            </div>
             
            <!-- generate password button -->
