@@ -15,5 +15,7 @@ This app uses JavaScript's `Math.random()` function to select random characters 
 ## Contributing
 Found a bug or want to contribute? Feel free to open an issue or submit a pull request!
 
+## Here it is, give it a try
+https://passwordgeneratorapplication.netlify.app/
 
 Give it a try, and let me know if you need further assistance with your README or anything else!
