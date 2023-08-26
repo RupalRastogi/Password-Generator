@@ -18,4 +18,4 @@ Found a bug or want to contribute? Feel free to open an issue or submit a pull r
 ## Live Demo
 https://passwordgeneratorapplication.netlify.app/
 
-Give it a try, and let me know if you need further assistance with your README or anything else!
+
